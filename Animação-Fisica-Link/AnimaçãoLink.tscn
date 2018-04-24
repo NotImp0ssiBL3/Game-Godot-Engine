@@ -1,0 +1,224 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Scripts/FisicaLink.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_3.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_4.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_5.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_6.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_7.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Link/Correr/Link_Correr_8.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Link/Granada/Link_Granada_2.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Link/Saltar/Link_Saltar_1.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Link/Saltar/Link_Saltar_2.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Link/Saltar/Link_Saltar_3.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Link/Saltar/Link_Saltar_4.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Link/Saltar/Link_Saltar_5.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Link/Saltar/Link_Saltar_6.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Link/Abajo/Link_Abajo_1.png" type="Texture" id=17]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 9.77696, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 17.5102 )
+
+[sub_resource type="SpriteFrames" id=5]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Correndo",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "Parado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Pulando",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Caindo",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "Abaixado",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=6]
+
+custom_solver_bias = 0.0
+radius = 10.0906
+height = 19.105
+
+[node name="Animações-Física-Link" type="Node" index="0"]
+
+[node name="Paredes" type="StaticBody2D" parent="." index="0"]
+
+position = Vector2( 41, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Chão" type="CollisionShape2D" parent="Paredes" index="0"]
+
+position = Vector2( 279, 461 )
+scale = Vector2( 32.5254, 1.92981 )
+shape = SubResource( 2 )
+
+[node name="ParedeDir" type="CollisionShape2D" parent="Paredes" index="1"]
+
+position = Vector2( 578.268, 229.908 )
+rotation = -1.57419
+scale = Vector2( 21.5722, 1.92981 )
+shape = SubResource( 3 )
+
+[node name="ParedeEsq" type="CollisionShape2D" parent="Paredes" index="2"]
+
+position = Vector2( -20.2387, 229.968 )
+rotation = -1.57419
+scale = Vector2( 22.1281, 1.92981 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paredes" index="3"]
+
+position = Vector2( 434, 245 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Paredes" index="4"]
+
+position = Vector2( 683, -1 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Paredes" index="5"]
+
+position = Vector2( 1049, -133 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Paredes" index="6"]
+
+position = Vector2( 1378, -330 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Paredes" index="7"]
+
+position = Vector2( 1734, -496 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Paredes" index="8"]
+
+position = Vector2( 1279, -625 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Paredes" index="9"]
+
+position = Vector2( 671, -766 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Paredes" index="10"]
+
+position = Vector2( -45, -751 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Paredes" index="11"]
+
+position = Vector2( -785, -388 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Paredes" index="12"]
+
+position = Vector2( -472, -10 )
+scale = Vector2( 12.5769, 1.88462 )
+shape = SubResource( 7 )
+
+[node name="Player" type="KinematicBody2D" parent="." index="1"]
+
+position = Vector2( 192.323, -14.1325 )
+rotation = -4.50015e-05
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpriteLink" type="AnimatedSprite" parent="Player" index="0"]
+
+position = Vector2( 75.7145, 213.177 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "Caindo"
+frame = 1
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AreaColisãoLink" type="CollisionShape2D" parent="Player" index="1"]
+
+position = Vector2( 79.2541, 216.586 )
+scale = Vector2( 2.50936, 2.11818 )
+shape = SubResource( 6 )
+
+[node name="Camera2D" type="Camera2D" parent="Player" index="2"]
+
+position = Vector2( 82.9814, 207.481 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+
+

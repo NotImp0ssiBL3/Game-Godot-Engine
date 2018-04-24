@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Link_EspadaGiratoria_1.png-9b2c4a04939458b28c4078cc7ae4f55d.stex"
+
+[deps]
+
+source_file="res://Sprites/Link/Espada Giratoria/Link_EspadaGiratoria_1.png"
+source_md5="01613c2d55fbdbc1e4d4706db31ae116"
+
+dest_files=[ "res://.import/Link_EspadaGiratoria_1.png-9b2c4a04939458b28c4078cc7ae4f55d.stex" ]
+dest_md5="a97a2523624947f4c25df11f19c63386"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

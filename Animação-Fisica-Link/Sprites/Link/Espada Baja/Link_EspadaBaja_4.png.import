@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Link_EspadaBaja_4.png-a55c8f4337c2d3258726c73a1b410620.stex"
+
+[deps]
+
+source_file="res://Sprites/Link/Espada Baja/Link_EspadaBaja_4.png"
+source_md5="8b03a95dd871f373282d76fc00f72492"
+
+dest_files=[ "res://.import/Link_EspadaBaja_4.png-a55c8f4337c2d3258726c73a1b410620.stex" ]
+dest_md5="c242b7415da726d89a4804d0dc01ad2b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

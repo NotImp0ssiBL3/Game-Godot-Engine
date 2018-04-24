@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Link_EspadaArriba_5.png-69cfb073a41e41605638bb389d51d702.stex"
+
+[deps]
+
+source_file="res://Sprites/Link/Espada Arriba/Link_EspadaArriba_5.png"
+source_md5="76f8dc70156aa48745201b75023c31b4"
+
+dest_files=[ "res://.import/Link_EspadaArriba_5.png-69cfb073a41e41605638bb389d51d702.stex" ]
+dest_md5="ef6e2476fc093cb71a467039aaef8417"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

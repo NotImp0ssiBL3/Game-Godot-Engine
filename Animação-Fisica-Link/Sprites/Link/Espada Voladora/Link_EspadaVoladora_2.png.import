@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Link_EspadaVoladora_2.png-e7459a8a474548e108e0b481163fa828.stex"
+
+[deps]
+
+source_file="res://Sprites/Link/Espada Voladora/Link_EspadaVoladora_2.png"
+source_md5="29793243c5c78effe5f7a11726307678"
+
+dest_files=[ "res://.import/Link_EspadaVoladora_2.png-e7459a8a474548e108e0b481163fa828.stex" ]
+dest_md5="b2cf752452fda09bb24bf8306dadb9cf"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
